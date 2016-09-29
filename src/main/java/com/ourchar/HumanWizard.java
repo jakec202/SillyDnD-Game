@@ -7,7 +7,6 @@ import com.parents.Human;
 public class HumanWizard extends Human implements Wizard {
 
 	
-	
 	public HumanWizard() {
 		super();
 		// TODO Auto-generated constructor stub
@@ -17,15 +16,19 @@ public class HumanWizard extends Human implements Wizard {
 		super(health, magic, name, weapon);
 		// TODO Auto-generated constructor stub
 	}
-
+	
+	// from Wizard
 	@Override
 	public void changeHealth() {
+		super.setHealth(health +0);
 		// TODO Auto-generated method stub
 
 	}
 
+	//from Wizard
 	@Override
 	public void changeMagic() {
+		super.setMagic(magic + 200);
 		// TODO Auto-generated method stub
 
 	}
@@ -34,6 +37,21 @@ public class HumanWizard extends Human implements Wizard {
 	public void setWeapon(Weapon weapon) {
 		// TODO Auto-generated method stub
 		super.setWeapon(Weapon.WAND);
+	}
+	
+	public HumanWizard makeHumanWizard(){
+		
+		HumanWizard ourHuWizard = new HumanWizard();
+		
+		ourHuWizard.changeHealth();
+		ourHuWizard.changeMagic();
+		ourHuWizard.setName(null);
+		ourHuWizard.setWeapon(null);
+		
+		return ourHuWizard;
+		
+		
+		
 	}
 	
 	

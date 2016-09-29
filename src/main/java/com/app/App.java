@@ -1,11 +1,24 @@
 package com.app;
 
 import java.util.Scanner;
+
+import com.ourchar.HumanWizard;
 import com.parents.*;
 
 public class App {
 	
 	public static void main(String[] args) {
+		
+		// set to run when humanwizard is selected to create the wizard
+		HumanWizard ourHumanWizard = new HumanWizard();
+        ourHumanWizard = ourHumanWizard.makeHumanWizard();
+        
+//    test to make sure HumanWizard is properly created   
+//        System.out.println(ourHumanWizard.getWeapon());
+//        System.out.println(ourHumanWizard.getHealth());
+//        System.out.println(ourHumanWizard.getMagic());
+//        System.out.println(ourHumanWizard.getName());
+		
 		
 		Scanner sc = new Scanner(System.in);
 		

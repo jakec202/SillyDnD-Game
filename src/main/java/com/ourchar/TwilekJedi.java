@@ -7,7 +7,6 @@ import com.parents.Twilek;
 public class TwilekJedi extends Twilek implements Jedi {
 
 	
-	
 	public TwilekJedi() {
 		super();
 		// TODO Auto-generated constructor stub

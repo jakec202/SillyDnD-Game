@@ -20,8 +20,10 @@ public class ElfRoyal extends Elf implements Royal{
 		// TODO Auto-generated constructor stub
 	}
 
+	// from Royal
 	@Override
 	public void changeHealth() {
+		super.setHealth(health - 5 );
 		// TODO Auto-generated method stub
 		
 	}
